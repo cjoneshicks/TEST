@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Fitness Tracker</h1>
+      <p class="subtitle">Track your workouts and hit 5 sessions each week.</p>
+
+      <section class="card">
+        <div class="week-header">
+          <button id="prev-week" type="button" aria-label="Previous week">&larr;</button>
+          <h2 id="week-label">Week</h2>
+          <button id="next-week" type="button" aria-label="Next week">&rarr;</button>
+        </div>
+
+        <p id="goal-status" class="goal-status">0 / 5 workouts completed</p>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <ul id="day-list" class="day-list"></ul>
+
+        <div class="actions">
+          <button id="mark-today" type="button">Mark today complete</button>
+          <button id="clear-week" type="button" class="secondary">Clear this week</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Last 8 weeks</h3>
+        <ul id="history-list" class="history-list"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
